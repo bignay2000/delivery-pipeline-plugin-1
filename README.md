@@ -9,15 +9,17 @@ Delivery Pipeline Plugin
 [![docker-suite](https://github.com/bignay2000/delivery-pipeline-plugin-1/actions/workflows/docker-suite.yml/badge.svg?branch=rewrite-2.0)](https://github.com/bignay2000/delivery-pipeline-plugin-1/actions/workflows/docker-suite.yml)
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/delivery-pipeline-plugin.svg)](https://plugins.jenkins.io/delivery-pipeline-plugin/)
 
-The Delivery Pipeline plugin visualises delivery pipelines in Jenkins: chains of jobs with upstream/downstream
+The Delivery Pipeline plugin visualizes delivery pipelines in Jenkins: chains of jobs with upstream/downstream
 dependencies, and Pipeline (Jenkinsfile) jobs. It is made for information radiators (there is a full screen page)
-and for everyday use next to the jobs.
+and for everyday use next to the jobs. Version 2.0 gained full support for both Declarative and Scripted Pipeline syntax.
 
 Plugin documentation: [plugins.jenkins.io/delivery-pipeline-plugin](https://plugins.jenkins.io/delivery-pipeline-plugin/).
 Bugs and feature requests go to the [Jenkins issue tracker](https://issues.jenkins.io/issues/?jql=component%20%3D%20delivery-pipeline-plugin),
 component `delivery-pipeline-plugin`.
 
 This plugin was contributed to the community by [Diabol AB](https://www.diabol.se).
+
+🤖 Version 2 generated with [Claude Code](https://claude.com/claude-code) Fable 5.1 September 2026
 
 ![A chain of jobs on a Delivery Pipeline view](docs/dpp_screenshot.png)
 
