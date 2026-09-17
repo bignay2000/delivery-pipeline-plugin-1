@@ -139,7 +139,9 @@ if phase == 'legacy':
     check('<showAvatars>true</showAvatars>' in cfg and 'WorkflowPipelineView' in cfg and 'embeddedCss' in cfg,
           '1.4.2 wrote the removed options and the old view type to the folder configuration')
 else:
-    check(p is not None and p['version'].startswith('2.0') and p['active'], 'Delivery Pipeline 2.0 is active')
+    # whatever 2.x this checkout builds: the exercise is about a 1.x home loading under the rewrite
+    check(p is not None and p['version'].startswith('2.') and p['active'],
+          f'the Delivery Pipeline 2.x of this checkout is active ({p and p["version"]})')
     v = views()
     check(v.get('Chain') == 'se.diabol.jenkins.pipeline.DeliveryPipelineView', f'the 1.4.2 view loaded as a Delivery Pipeline View ({v.get("Chain")})')
     check(v.get('Flows') == 'se.diabol.jenkins.pipeline.DeliveryPipelineView', f'the Pipeline-only view became a Delivery Pipeline View ({v.get("Flows")})')
